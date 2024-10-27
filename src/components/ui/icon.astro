@@ -1,0 +1,27 @@
+---
+import GitHubIcon from '../ui/icons/github.astro';
+import LinkedinIcon from '../ui/icons/linkedin.astro';
+import ExternalLinkIcon from '../ui/icons/external-link.astro';
+import MailIcon from '../ui/icons/mail.astro';
+
+const iconMapper = {
+  github: GitHubIcon,
+  linkedin: LinkedinIcon,
+  externalLink: ExternalLinkIcon,
+  mail: MailIcon
+};
+
+interface Props {
+	type: string;
+  href: string;
+  text: string;
+  class_: string;
+}
+
+const { type, href, text, class_ } = Astro.props;
+const IconComponent = iconMapper[type];
+---
+<a href={href} target="_blank" class={"text-gray-600 hover:text-gray-900 flex gap-3 " + class_}>
+  <IconComponent></IconComponent>
+  <span>{text}</span>
+</a>

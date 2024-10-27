@@ -1,0 +1,134 @@
+{
+    "basics": {
+        "name": "Marc Orfila Carreras",
+        "image": "/images/header-memoji.png",
+        "summary": "Desarrollador de aplicaciones multiplataforma recién graduado, con un sólido conjunto de habilidades en programación y resolución de problemas. Mi experiencia abarca lenguajes de programación como Java o Python. Con ganas de seguir creciendo y enfrentar nuevos retos.",
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "MarcOrfilaCarreras",
+                "url": "https://github.com/MarcOrfilaCarreras"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "marc-orfila-carreras",
+                "url": "https://www.linkedin.com/in/marc-orfila-carreras/"
+            },
+            {
+                "network": "Mail",
+                "username": "hola@marcorfilacarreras.cloud",
+                "url": "mailto:hola@marcorfilacarreras.cloud"
+            }
+        ]
+    },
+    "works": [
+        {
+            "company": "Intecat | Apple Premium Partner",
+            "position": "Especialista En Ventas",
+            "url": "https://www.linkedin.com/company/1556638/",
+            "startDate": "Junio 2024",
+            "endDate": "Presente",
+            "highlights": [
+                "Asesoría al cliente",
+                "Demostraciones de producto",
+                "Soporte técnico básico",
+                "Gestión de ventas"
+            ]
+        },
+        {
+            "company": "Rubicon Consultoría Y Desarrollo De Software SLU",
+            "position": "Desarrollador",
+            "url": "https://www.linkedin.com/company/93382628",
+            "startDate": "Abril 2023",
+            "endDate": "Agosto 2023",
+            "highlights": [
+                "Gestión y desarrollo de proyectos",
+                "Interacción con clientes para definir requisitos clave",
+                " Integración de soluciones con empresas externas"
+            ]
+        },
+        {
+            "company": "Rubicon Consultoría Y Desarrollo De Software SLU",
+            "position": "Estudiante En Prácticas",
+            "url": "https://www.linkedin.com/company/93382628",
+            "startDate": "Octubre 2022",
+            "endDate": "Marzo 2023",
+            "highlights": [
+                "Asistencia en Proyectos",
+                "Soporte a Usuarios"
+            ]
+        },
+        {
+            "company": "Lidl España",
+            "position": "Dependiente De Tienda",
+            "url": "https://www.linkedin.com/company/lidl-espana/",
+            "startDate": "Junio 2022",
+            "endDate": "Agosto 2022",
+            "highlights": [
+                "Atención al cliente"
+            ]
+        },
+        {
+            "company": "Menorcatel",
+            "position": "Estudiante En Prácticas",
+            "url": "https://www.linkedin.com/company/menorcatel/",
+            "startDate": "Marzo 2021",
+            "endDate": "Junio 2021",
+            "highlights": [
+                "Instalación y configuración de equipamientos de red",
+                "Instalación y configuración de centralitas telefónicas"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Institut Vidal i Barraquer",
+            "url": "https://www.vidalibarraquer.net/",
+            "studyType": "Curso De Especialización En IA Y Big Data",
+            "startDate": "Septiembre 2023",
+            "endDate": "Junio 2024"
+        },
+        {
+            "institution": "Institut Vidal i Barraquer",
+            "url": "https://www.vidalibarraquer.net/",
+            "studyType": "Ciclo Formativo De Grado Superior De Desarrollo De Aplicaciones Multiplataforma",
+            "startDate": "Septiembre 2021",
+            "endDate": "Junio 2023"
+        },
+        {
+            "institution": "IES Joan Ramis i Ramis",
+            "url": "https://redols.caib.es/c07001964/",
+            "studyType": "Ciclo Formativo De Grado Medio De Sistemas Microinformáticos Y Redes",
+            "startDate": "Septiembre 2019",
+            "endDate": "Junio 2021"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Español",
+            "fluency": "Nativo"
+        },
+        {
+            "language": "Catalán",
+            "fluency": "Nativo"
+        },
+        {
+            "language": "Inglés",
+            "fluency": "B2 - First Certificate"
+        }
+    ],
+    "skills": [
+    ],
+    "projects": [
+        {
+            "name": "Deploy Now",
+            "description": "Una plataforma que permite desplegar servicios bajo demanda para exhibir proyectos durante 10 minutos",
+            "url": "https://deploy-now.marcorfilacarreras.cloud",
+            "technologies": [
+                "python3",
+                "flask",
+                "jinja2"
+            ]
+        }
+    ]
+}

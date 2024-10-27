@@ -1,0 +1,25 @@
+---
+const languages = [
+  { code: 'en', label: 'English', path: '/en', flag: '🇺🇸' },
+  { code: 'es', label: 'Español', path: '/es', flag: '🇪🇸' }
+];
+---
+
+<div class="flex items-center justify-center gap-3">
+  {languages.map(lang => (
+    <button
+      key={lang.code}
+      class="flex items-center justify-center w-12 h-12 text-xl border border-gray-300 rounded-full hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
+      onClick={"handleChange('" + lang.code + "')"}
+      title={lang.label}
+    >
+      {lang.flag}
+    </button>
+  ))}
+</div>
+
+<script client:load>
+  const handleChange = (lang) => {
+    window.location.href = "/" + lang;
+  };
+</script>
