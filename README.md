@@ -1,62 +1,28 @@
-# Project Title
+# Resume
 
-Description of the project.
+A simple Astro + GitHub Pages powered resume.
 
 ## Installation
 
-### With Docker
-
 1. Clone the Repository:
 ```bash
-git clone <url>
+git clone https://github.com/MarcOrfilaCarreras/resume.git
 ```
 
 2. Navigate to Project Directory:
 ```bash
-cd <folder>
-```
-
-3. Build the Docker Image:
-```bash
-docker build -t <project-name>:latest .
-```
-
-4. Run the Docker Container:
-```bash
-docker run --rm <project-name>:latest
-```
-
-### Without Docker
-
-1. Clone the Repository:
-```bash
-git clone <url>
-```
-
-2. Navigate to Project Directory:
-```bash
-cd <project-name>
+cd resume
 ```
 
 3. Install dependencies:
 ```bash
-# Add installation command here
+npm install
 ```
 
-4. Run the tool:
+4. Run the development server:
 ```bash
-# Add command to run the tool here
+npm run dev
 ```
-
-## Usage
-
-1. Run the Tool:
-    - Open a terminal or command prompt.
-    - Use the `cd` command to navigate to the directory where the tool is located.
-    - Run the tool with appropriate parameters.
-
-2. Additional Notes:
-    - Review the tool's documentation for additional options and usage instructions.
 
 ## License
 
