@@ -1,0 +1,43 @@
+---
+import {Language} from "../types/Language";
+interface Props {
+    title: string;
+    titleLanguages: string;
+    titleSkills: string;
+    skills: string[];
+    languages: Language[];
+}
+
+const { title, titleLanguages, titleSkills, skills, languages } = Astro.props;
+---
+<section>
+  <a name="skills-languages"/>
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <h3 class="text-lg font-semibold mb-2">{titleSkills}</h3>
+        <div class="flex flex-wrap gap-2">
+            {
+            skills.map((item, index) => (
+                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                    {item}
+                </span>
+            ))
+          }
+          </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mb-2">{titleLanguages}</h3>
+        <div class="flex flex-wrap gap-2">
+          {
+          languages.map(({ language, fluency }) => (
+            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                {language} ({fluency})
+            </span>
+          ))
+        }
+        </div>
+      </div>
+    </div>
+  </section>

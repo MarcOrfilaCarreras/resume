@@ -4,6 +4,7 @@ import Header from "../sections/Header.astro";
 import About from "../sections/About.astro";
 import Work from "../sections/Work.astro";
 import Education from "../sections/Education.astro";
+import SkillsLanguages from "../sections/SkillsLanguages.astro";
 import Projects from "../sections/Projects.astro";
 import Footer from "../sections/Footer.astro";
 import Language from "../components/ui/language-button.astro";
@@ -20,6 +21,7 @@ import Data from "../translations/es.json";
                   <a href="#work" class="text-gray-700 hover:text-blue-500">Experiencia Laboral</a>
                   <a href="#education" class="text-gray-700 hover:text-blue-500">Educación</a>
                   <a href="#projects" class="text-gray-700 hover:text-blue-500">Proyectos</a>
+                  <a href="#skills-languages" class="text-gray-700 hover:text-blue-500">Habilidades e Idiomas</a>
                 </nav>
             </div>
 
@@ -28,6 +30,7 @@ import Data from "../translations/es.json";
             <Work title="Experiencia Laboral" works={Data.works} />
             <Education title="Educación" education={Data.education}/>
             <Projects title="Proyectos" projects={Data.projects}/>
+            <SkillsLanguages title="Habilidades e Idiomas" titleLanguages="Idiomas" titleSkills="Habilidades" skills={Data.skills} languages={Data.languages}/>
             <Footer/>
         </div>
     </div>
