@@ -1,140 +1,131 @@
 {
-    "basics": {
-        "name": "Marc Orfila Carreras",
-        "image": "/images/header-memoji.png",
-        "headline": "Junior Developer",
-        "summary": "Recently graduated multi-platform application developer with a strong set of skills in programming and problem-solving. My experience includes programming languages such as Java and Python. Eager to continue growing and face new challenges.",
-        "profiles": [
-            {
-                "network": "GitHub",
-                "username": "MarcOrfilaCarreras",
-                "url": "https://github.com/MarcOrfilaCarreras"
-            },
-            {
-                "network": "LinkedIn",
-                "username": "marc-orfila-carreras",
-                "url": "https://www.linkedin.com/in/marc-orfila-carreras/"
-            },
-            {
-                "network": "Mail",
-                "username": "hola@marcorfilacarreras.cloud",
-                "url": "mailto:hola@marcorfilacarreras.cloud"
-            }
-        ]
-    },
-    "works": [
-        {
-            "company": "Intecat | Apple Premium Partner",
-            "position": "Sales Specialist",
-            "url": "https://www.linkedin.com/company/1556638/",
-            "startDate": "June 2024",
-            "endDate": "Present",
-            "highlights": [
-                "Customer advisory",
-                "Product demonstrations",
-                "Basic technical support",
-                "Sales management"
-            ]
-        },
-        {
-            "company": "Rubicon Consultoría Y Desarrollo De Software SLU",
-            "position": "Developer",
-            "url": "https://www.linkedin.com/company/93382628",
-            "startDate": "April 2023",
-            "endDate": "August 2023",
-            "highlights": [
-                "Project management and development",
-                "Client interaction to define key requirements",
-                "Integration of solutions with external companies"
-            ]
-        },
-        {
-            "company": "Rubicon Consultoría Y Desarrollo De Software SLU",
-            "position": "Intern",
-            "url": "https://www.linkedin.com/company/93382628",
-            "startDate": "October 2022",
-            "endDate": "March 2023",
-            "highlights": [
-                "Assistance in projects",
-                "User support"
-            ]
-        },
-        {
-            "company": "Lidl España",
-            "position": "Store Assistant",
-            "url": "https://www.linkedin.com/company/lidl-espana/",
-            "startDate": "June 2022",
-            "endDate": "August 2022",
-            "highlights": [
-                "Customer service"
-            ]
-        },
-        {
-            "company": "Menorcatel",
-            "position": "Intern",
-            "url": "https://www.linkedin.com/company/menorcatel/",
-            "startDate": "March 2021",
-            "endDate": "June 2021",
-            "highlights": [
-                "Installation and configuration of network equipment",
-                "Installation and configuration of telephone exchanges"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Institut Vidal i Barraquer",
-            "url": "https://www.vidalibarraquer.net/",
-            "studyType": "Specialization Course in AI and Big Data",
-            "startDate": "September 2023",
-            "endDate": "June 2024"
-        },
-        {
-            "institution": "Institut Vidal i Barraquer",
-            "url": "https://www.vidalibarraquer.net/",
-            "studyType": "Higher Level Vocational Training in Multi-Platform Application Development",
-            "startDate": "September 2021",
-            "endDate": "June 2023"
-        },
-        {
-            "institution": "IES Joan Ramis i Ramis",
-            "url": "https://redols.caib.es/c07001964/",
-            "studyType": "Medium Level Vocational Training in Microcomputer Systems and Networks",
-            "startDate": "September 2019",
-            "endDate": "June 2021"
-        }
-    ],
-    "languages": [
-        {
-            "language": "Spanish",
-            "fluency": "Native"
-        },
-        {
-            "language": "Catalan",
-            "fluency": "Native"
-        },
-        {
-            "language": "English",
-            "fluency": "B2 - First Certificate"
-        }
-    ],
-    "skills": [
-        "Flexibility",
-        "Meticulous",
-        "Committed",
-        "Independent",
-        "Teamwork"
-    ],
-    "projects": [
-        {
-            "name": "Deploy Now",
-            "description": "A platform that allows on-demand service deployment to showcase projects for 10 minutes",
-            "url": "https://deploy-now.marcorfilacarreras.cloud",
-            "technologies": [
-                "python3",
-                "flask",
-                "jinja2"
-            ]
-        }
+  "basics": {
+    "name": "Marc Orfila Carreras",
+    "image": "/images/header-memoji.png",
+    "headline": "Junior Developer",
+    "summary": "Recently graduated multi-platform application developer with a strong set of skills in programming and problem-solving. My experience includes programming languages such as Java and Python. Eager to continue growing and face new challenges.",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "MarcOrfilaCarreras",
+        "url": "https://github.com/MarcOrfilaCarreras"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "marc-orfila-carreras",
+        "url": "https://www.linkedin.com/in/marc-orfila-carreras/"
+      },
+      {
+        "network": "Mail",
+        "username": "hola@marcorfilacarreras.cloud",
+        "url": "mailto:hola@marcorfilacarreras.cloud"
+      }
     ]
+  },
+  "works": [
+    {
+      "company": "Intecat | Apple Premium Partner",
+      "position": "Sales Specialist",
+      "url": "https://www.linkedin.com/company/1556638/",
+      "startDate": "June 2024",
+      "endDate": "Present",
+      "highlights": [
+        "Customer advisory",
+        "Product demonstrations",
+        "Basic technical support",
+        "Sales management"
+      ]
+    },
+    {
+      "company": "Rubicon Consultoría Y Desarrollo De Software SLU",
+      "position": "Developer",
+      "url": "https://www.linkedin.com/company/93382628",
+      "startDate": "April 2023",
+      "endDate": "August 2023",
+      "highlights": [
+        "Project management and development",
+        "Client interaction to define key requirements",
+        "Integration of solutions with external companies"
+      ]
+    },
+    {
+      "company": "Rubicon Consultoría Y Desarrollo De Software SLU",
+      "position": "Intern",
+      "url": "https://www.linkedin.com/company/93382628",
+      "startDate": "October 2022",
+      "endDate": "March 2023",
+      "highlights": ["Assistance in projects", "User support"]
+    },
+    {
+      "company": "Lidl España",
+      "position": "Store Assistant",
+      "url": "https://www.linkedin.com/company/lidl-espana/",
+      "startDate": "June 2022",
+      "endDate": "August 2022",
+      "highlights": ["Customer service"]
+    },
+    {
+      "company": "Menorcatel",
+      "position": "Intern",
+      "url": "https://www.linkedin.com/company/menorcatel/",
+      "startDate": "March 2021",
+      "endDate": "June 2021",
+      "highlights": [
+        "Installation and configuration of network equipment",
+        "Installation and configuration of telephone exchanges"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Institut Vidal i Barraquer",
+      "url": "https://www.vidalibarraquer.net/",
+      "studyType": "Specialization Course in AI and Big Data",
+      "startDate": "September 2023",
+      "endDate": "June 2024"
+    },
+    {
+      "institution": "Institut Vidal i Barraquer",
+      "url": "https://www.vidalibarraquer.net/",
+      "studyType": "Higher Level Vocational Training in Multi-Platform Application Development",
+      "startDate": "September 2021",
+      "endDate": "June 2023"
+    },
+    {
+      "institution": "IES Joan Ramis i Ramis",
+      "url": "https://redols.caib.es/c07001964/",
+      "studyType": "Medium Level Vocational Training in Microcomputer Systems and Networks",
+      "startDate": "September 2019",
+      "endDate": "June 2021"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "Catalan",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "B2 - First Certificate"
+    }
+  ],
+  "skills": [
+    "Flexibility",
+    "Meticulous",
+    "Committed",
+    "Independent",
+    "Teamwork"
+  ],
+  "projects": [
+    {
+      "name": "Deploy Now",
+      "description": "A platform that allows on-demand service deployment to showcase projects for 10 minutes",
+      "url": "https://deploy-now.marcorfilacarreras.cloud",
+      "technologies": ["python3", "flask", "jinja2"]
+    }
+  ]
 }

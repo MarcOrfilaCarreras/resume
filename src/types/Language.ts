@@ -1,4 +1,4 @@
 export type Language = {
-    language: string;
-    fluency: string;
-  };
+  language: string;
+  fluency: string;
+};

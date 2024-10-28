@@ -10,28 +10,42 @@ const { title, works } = Astro.props;
 ---
 
 <section>
-    <a name="work"/>
-    <h2 class="text-2xl print:text-base font-bold text-gray-900 mb-4 print:mb-2">{title}</h2>
-    <div class="flex flex-col border-l print:border-none border-gray-200 print:gap-4 print:p-0 print:m-0 pl-8 ml-2">
-        {
-            works.map(({ company, position, url, startDate, endDate, highlights }) => (
-                <div class="mb-8 print:mb-0 relative">
-                    <div class="print:hidden absolute w-4 h-4 bg-blue-500 rounded-full -left-10 top-1"></div>
-                    <h3 class="text-lg print:text-xs font-semibold">{position}</h3>
-                    <span class="text-gray-600 flex gap-2 flex-col md:flex-row">
-                        <a href={url} target="_blank" class="text-gray-600 print:text-xs hover:text-gray-900 flex gap-3"><strong>{company}</strong></a>
-                        <p class="hidden md:block print:text-xs">|</p>
-                        <p class="print:text-xs">{startDate} - {endDate}</p>
-                    </span>
-                    <ul class="list-disc pl-5">
-                        {
-                            highlights.map((highlight, index) => (
-                                <li class="text-gray-700 mt-2 print:mt-1 print:text-xs">{highlight}</li>
-                            ))
-                        }
-                    </ul>
-                </div>
-            ))
-        }
-    </div>
-  </section>
+  <a name="work"></a>
+  <h2 class="text-2xl print:text-base font-bold text-gray-900 mb-4 print:mb-2">
+    {title}
+  </h2>
+  <div
+    class="flex flex-col border-l print:border-none border-gray-200 print:gap-4 print:p-0 print:m-0 pl-8 ml-2"
+  >
+    {
+      works.map(
+        ({ company, position, url, startDate, endDate, highlights }) => (
+          <div class="mb-8 print:mb-0 relative">
+            <div class="print:hidden absolute w-4 h-4 bg-blue-500 rounded-full -left-10 top-1" />
+            <h3 class="text-lg print:text-xs font-semibold">{position}</h3>
+            <span class="text-gray-600 flex gap-2 flex-col md:flex-row">
+              <a
+                href={url}
+                target="_blank"
+                class="text-gray-600 print:text-xs hover:text-gray-900 flex gap-3"
+              >
+                <strong>{company}</strong>
+              </a>
+              <p class="hidden md:block print:text-xs">|</p>
+              <p class="print:text-xs">
+                {startDate} - {endDate}
+              </p>
+            </span>
+            <ul class="list-disc pl-5">
+              {highlights.map((highlight, index) => (
+                <li class="text-gray-700 mt-2 print:mt-1 print:text-xs">
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ),
+      )
+    }
+  </div>
+</section>

@@ -1,28 +1,32 @@
 ---
-import GitHubIcon from '../ui/icons/github.astro';
-import LinkedinIcon from '../ui/icons/linkedin.astro';
-import MailIcon from '../ui/icons/mail.astro';
+import GitHubIcon from "../ui/icons/github.astro";
+import LinkedinIcon from "../ui/icons/linkedin.astro";
+import MailIcon from "../ui/icons/mail.astro";
 
 const iconMapper = {
   github: GitHubIcon,
   linkedin: LinkedinIcon,
-  mail: MailIcon
+  mail: MailIcon,
 };
 
 interface Props {
-	type: string;
+  type: string;
   href: string;
   text: string;
   class_: string;
 }
 
-const { type = null, href, text, class_ = "" } = Astro.props;
+const { type = null, href, text, class_ } = Astro.props;
 const IconComponent = type ? iconMapper[type] : null;
 ---
-<a href={href} target="_blank" class={"text-gray-600 hover:text-gray-900 flex gap-1 justify-center items-center" + class_}>
-  {
-    IconComponent && <IconComponent></IconComponent>
-  }
+
+<a
+  href={href}
+  target="_blank"
+  class={"text-gray-600 hover:text-gray-900 flex gap-1 justify-center items-center" +
+    class_}
+>
+  {IconComponent && <IconComponent />}
 
   <span class="print:block hidden print:text-xs">{text}</span>
 </a>

@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -17,8 +17,8 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-            node-version: 18.x
-            cache: npm
+          node-version: 18.x
+          cache: npm
 
       - run: npm install
       - run: npm run build

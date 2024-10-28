@@ -1,43 +1,50 @@
 ---
-import {Language} from "../types/Language";
+import { Language } from "../types/Language";
 interface Props {
-    title: string;
-    titleLanguages: string;
-    titleSkills: string;
-    skills: string[];
-    languages: Language[];
+  title: string;
+  titleLanguages: string;
+  titleSkills: string;
+  skills: string[];
+  languages: Language[];
 }
 
 const { title, titleLanguages, titleSkills, skills, languages } = Astro.props;
 ---
-<section>
-  <a name="skills-languages"/>
-    <h2 class="text-2xl print:text-base font-bold text-gray-900 mb-4 print:mb-2">{title}</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div>
-        <h3 class="text-lg font-semibold mb-2 print:text-xs">{titleSkills}</h3>
-        <div class="flex flex-wrap gap-2 print:grid print:grid-cols-2 print:gap-0">
-            {
-            skills.map((item, index) => (
-                <span class="bg-gray-200 print:bg-transparent text-gray-700 px-3 print:px-0 py-1 rounded-full text-sm">
-                    {item}
-                </span>
-            ))
-          }
-          </div>
-      </div>
 
-      <div>
-        <h3 class="text-lg font-semibold mb-2 print:text-xs">{titleLanguages}</h3>
-        <div class="flex flex-wrap gap-2 print:grid print:grid-cols-1 print:gap-0">
-          {
-          languages.map(({ language, fluency }) => (
+<section>
+  <a name="skills-languages"></a>
+  <h2 class="text-2xl print:text-base font-bold text-gray-900 mb-4 print:mb-2">
+    {title}
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <h3 class="text-lg font-semibold mb-2 print:text-xs">{titleSkills}</h3>
+      <div
+        class="flex flex-wrap gap-2 print:grid print:grid-cols-2 print:gap-0"
+      >
+        {
+          skills.map((item, index) => (
             <span class="bg-gray-200 print:bg-transparent text-gray-700 px-3 print:px-0 py-1 rounded-full text-sm">
-                {language} ({fluency})
+              {item}
             </span>
           ))
         }
-        </div>
       </div>
     </div>
-  </section>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-2 print:text-xs">{titleLanguages}</h3>
+      <div
+        class="flex flex-wrap gap-2 print:grid print:grid-cols-1 print:gap-0"
+      >
+        {
+          languages.map(({ language, fluency }) => (
+            <span class="bg-gray-200 print:bg-transparent text-gray-700 px-3 print:px-0 py-1 rounded-full text-sm">
+              {language} ({fluency})
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -2,31 +2,41 @@
 import { Education } from "../types/Education";
 
 interface Props {
-    title: string;
-    education: Education[];
+  title: string;
+  education: Education[];
 }
 
 const { title, education } = Astro.props;
 ---
 
 <section>
-    <a name="education"></a>
-    <h2 class="text-2xl print:text-base font-bold text-gray-900 mb-4 print:mb-2">{title}</h2>
-    <div class="flex flex-col print:gap-4 border-l print:border-none border-gray-200 print:p-0 print:m-0 pl-8 ml-2">
-        {
-            education.map(
-                ({ institution, url, startDate, endDate, studyType }) => (
-                    <div class="mb-8 print:mb-0 relative">
-                        <div class="print:hidden absolute w-4 h-4 bg-blue-500 rounded-full -left-10 top-1" />
-                        <h3 class="text-lg print:text-xs font-semibold">{studyType}</h3>
-                        <span class="text-gray-600 flex gap-2 flex-col sm:flex-row">
-                            <a href={url} target="_blank" class="text-gray-600 print:text-xs hover:text-gray-900 flex gap-3"><strong>{institution}</strong></a>
-                            <p class="hidden sm:block print:text-xs">|</p>
-                            <p class="print:text-xs">{startDate} - {endDate}</p>
-                        </span>
-                    </div>
-                ),
-            )
-        }
-    </div>
+  <a name="education"></a>
+  <h2 class="text-2xl print:text-base font-bold text-gray-900 mb-4 print:mb-2">
+    {title}
+  </h2>
+  <div
+    class="flex flex-col print:gap-4 border-l print:border-none border-gray-200 print:p-0 print:m-0 pl-8 ml-2"
+  >
+    {
+      education.map(({ institution, url, startDate, endDate, studyType }) => (
+        <div class="mb-8 print:mb-0 relative">
+          <div class="print:hidden absolute w-4 h-4 bg-blue-500 rounded-full -left-10 top-1" />
+          <h3 class="text-lg print:text-xs font-semibold">{studyType}</h3>
+          <span class="text-gray-600 flex gap-2 flex-col sm:flex-row">
+            <a
+              href={url}
+              target="_blank"
+              class="text-gray-600 print:text-xs hover:text-gray-900 flex gap-3"
+            >
+              <strong>{institution}</strong>
+            </a>
+            <p class="hidden sm:block print:text-xs">|</p>
+            <p class="print:text-xs">
+              {startDate} - {endDate}
+            </p>
+          </span>
+        </div>
+      ))
+    }
+  </div>
 </section>

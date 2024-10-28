@@ -19,7 +19,9 @@ const { name, headline, profiles, image } = Astro.props;
     class="w-[150px] h-[150px] print:w-28 print:h-28 rounded-full mx-auto print:mx-0 print:m-0 print:mr-4"
   />
   <div class="flex flex-col gap-2 print:items-start">
-    <div class="flex flex-col print:flex-row print:items-center print:gap-2 mt-2 print:mt-0">
+    <div
+      class="flex flex-col print:flex-row print:items-center print:gap-2 mt-2 print:mt-0"
+    >
       <h1 class="text-4xl print:text-base font-bold text-gray-900">{name}</h1>
       <p class="hidden print:block print:text-sm text-gray-600">|</p>
       <p class="text-xl print:text-sm text-gray-600">{headline}</p>

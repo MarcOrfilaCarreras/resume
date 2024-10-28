@@ -1,16 +1,18 @@
 ---
 interface Props {
-    title: string;
-    text: string;
+  title: string;
+  text: string;
 }
 
 const { title, text } = Astro.props;
 ---
 
 <section>
-    <a name="about"/>
-    <h2 class="text-2xl print:text-base font-bold text-gray-900 mb-4 print:mb-2">{title}</h2>
-    <p class="text-gray-700 print:text-xs">
-        {text}
-    </p>
+  <a name="about"></a>
+  <h2 class="text-2xl print:text-base font-bold text-gray-900 mb-4 print:mb-2">
+    {title}
+  </h2>
+  <p class="text-gray-700 print:text-xs">
+    {text}
+  </p>
 </section>
