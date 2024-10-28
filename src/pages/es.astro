@@ -1,37 +1,27 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../sections/Header.astro";
-import About from "../sections/About.astro";
-import Work from "../sections/Work.astro";
-import Education from "../sections/Education.astro";
-import SkillsLanguages from "../sections/SkillsLanguages.astro";
-import Projects from "../sections/Projects.astro";
-import Footer from "../sections/Footer.astro";
-import Language from "../components/ui/language-button.astro";
+import Home from "../layouts/Home.astro";
 import Data from "../translations/es.json";
 ---
 
-<Layout title={Data.basics.name + " | Portfolio"}>
-    <div class="min-h-screen bg-gray-100 p-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto space-y-12">
-            <div class="flex flex-col md:flex-row justify-center mt-4 mb-4 border-b border-gray-300 pb-4 items-center">
-                <Language />
-                <nav class="flex flex-wrap justify-center mt-6 md:mt-0 md:justify-end space-x-4 w-full">
-                  <a href="#about" class="text-gray-700 hover:text-blue-500">Sobre mí</a>
-                  <a href="#work" class="text-gray-700 hover:text-blue-500">Experiencia Laboral</a>
-                  <a href="#education" class="text-gray-700 hover:text-blue-500">Educación</a>
-                  <a href="#projects" class="text-gray-700 hover:text-blue-500">Proyectos</a>
-                  <a href="#skills-languages" class="text-gray-700 hover:text-blue-500">Habilidades e Idiomas</a>
-                </nav>
-            </div>
+<Home
+    title={Data.basics.name + " | Portfolio"}
+    basics={Data.basics}
 
-            <Header name={Data.basics.name} profiles={Data.basics.profiles} image={Data.basics.image} />
-            <About title="Sobre mí" text={Data.basics.summary} />
-            <Work title="Experiencia Laboral" works={Data.works} />
-            <Education title="Educación" education={Data.education}/>
-            <Projects title="Proyectos" projects={Data.projects}/>
-            <SkillsLanguages title="Habilidades e Idiomas" titleLanguages="Idiomas" titleSkills="Habilidades" skills={Data.skills} languages={Data.languages}/>
-            <Footer/>
-        </div>
-    </div>
-</Layout>
+    titleAbout="Sobre mí"
+    about={Data.basics}
+
+    titleWork="Experiencia Laboral"
+    works={Data.works}
+
+    titleEducation="Educación"
+    educations={Data.education}
+
+    titleProjects="Proyectos"
+    projects={Data.projects}
+
+    titleSkillLanguages="Habilidades e Idiomas"
+    titleSkillLanguagesSkills="Habilidades"
+    titleSkillLanguagesLanguages="Idiomas"
+    skills={Data.skills}
+    languages={Data.languages}
+/>

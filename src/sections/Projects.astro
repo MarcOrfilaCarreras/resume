@@ -12,7 +12,7 @@ const { title, projects } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
 
-<section>
+<section class="print:hidden">
     <a name="projects"/>
     <h2 class="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

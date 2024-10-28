@@ -19,10 +19,10 @@ interface Props {
 const { type = null, href, text, class_ = "" } = Astro.props;
 const IconComponent = type ? iconMapper[type] : null;
 ---
-<a href={href} target="_blank" class={"text-gray-600 hover:text-gray-900 flex gap-3 " + class_}>
+<a href={href} target="_blank" class={"text-gray-600 hover:text-gray-900 flex gap-1 justify-center items-center" + class_}>
   {
     IconComponent && <IconComponent></IconComponent>
   }
 
-  <span>{text}</span>
+  <span class="print:block hidden print:text-xs">{text}</span>
 </a>

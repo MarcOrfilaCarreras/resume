@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../sections/Header.astro";
+import About from "../sections/About.astro";
+import Work from "../sections/Work.astro";
+import Education from "../sections/Education.astro";
+import SkillsLanguages from "../sections/SkillsLanguages.astro";
+import Projects from "../sections/Projects.astro";
+import Footer from "../sections/Footer.astro";
+import Language from "../components/ui/language-button.astro";
+
+interface Props {
+    title: string;
+    basics: any;
+
+    titleAbout: string;
+    about: any;
+
+    titleWork: string;
+    works: any;
+
+    titleEducation: string;
+    educations: any;
+
+    titleProjects: string;
+    projects: any;
+
+    titleSkillLanguages: string;
+    titleSkillLanguagesSkills: string;
+    titleSkillLanguagesLanguages: string;
+    skills: any;
+    languages: any;
+}
+
+const { title, basics, titleAbout, about, titleWork, works, titleEducation, educations, titleProjects, projects, titleSkillLanguages,titleSkillLanguagesSkills, titleSkillLanguagesLanguages,  skills, languages } = Astro.props;
+---
+
+<Layout title={title}>
+    <div class="min-h-screen bg-gray-100 print:-m-10 p-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto space-y-12 print:space-y-6 print:flex print:flex-col">
+            <div class="print:hidden flex flex-col md:flex-row justify-end mt-4 mb-4 border-b border-gray-300 pb-4 items-center">
+                <Language />
+            </div>
+
+            <Header name={basics.name} headline={basics.headline} profiles={basics.profiles} image={basics.image} />
+
+            <About title={titleAbout} text={about.summary} />
+            <hr class="hidden print:block">
+
+            <Work title={titleWork} works={works} />
+            <hr class="hidden print:block">
+
+            <Education title={titleEducation} education={educations}/>
+            <hr class="hidden print:block">
+
+            <Projects title={titleProjects} projects={projects}/>
+
+            <SkillsLanguages title={titleSkillLanguages} titleLanguages={titleSkillLanguagesLanguages} titleSkills={titleSkillLanguagesSkills} skills={skills} languages={languages}/>
+
+            <Footer/>
+        </div>
+    </div>
+</Layout>
