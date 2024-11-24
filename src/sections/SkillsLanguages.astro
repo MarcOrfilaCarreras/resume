@@ -24,7 +24,7 @@ const { title, titleLanguages, titleSkills, skills, languages } = Astro.props;
       >
         {
           skills.map((item, index) => (
-            <span class="bg-gray-200 print:bg-transparent text-gray-700 px-3 print:px-0 py-1 rounded-full text-sm">
+            <span class="bg-gray-200 print:bg-transparent text-gray-700 px-3 print:px-0 py-1 rounded-full text-sm print:text-xs">
               {item}
             </span>
           ))
@@ -39,7 +39,7 @@ const { title, titleLanguages, titleSkills, skills, languages } = Astro.props;
       >
         {
           languages.map(({ language, fluency }) => (
-            <span class="bg-gray-200 print:bg-transparent text-gray-700 px-3 print:px-0 py-1 rounded-full text-sm">
+            <span class="bg-gray-200 print:bg-transparent text-gray-700 px-3 print:px-0 py-1 rounded-full text-sm print:text-xs">
               {language} ({fluency})
             </span>
           ))
