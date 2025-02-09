@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Marc Orfila Carreras",
-    "image": "/images/header-memoji.png",
+    "image": "/images/header.jpg",
     "headline": "Junior Developer",
     "summary": "Recently graduated multi-platform application developer with a strong set of skills in programming and problem-solving. My experience includes programming languages such as Java and Python. Eager to continue growing and face new challenges.",
     "profiles": [
@@ -40,29 +40,14 @@
       "company": "Rubicon Consultoría Y Desarrollo De Software SLU",
       "position": "Developer",
       "url": "https://www.linkedin.com/company/93382628",
-      "startDate": "April 2023",
+      "startDate": "October 2022",
       "endDate": "August 2023",
       "highlights": [
         "Project management and development",
         "Client interaction to define key requirements",
-        "Integration of solutions with external companies"
+        "Integration of solutions with external companies",
+        "User support"
       ]
-    },
-    {
-      "company": "Rubicon Consultoría Y Desarrollo De Software SLU",
-      "position": "Intern",
-      "url": "https://www.linkedin.com/company/93382628",
-      "startDate": "October 2022",
-      "endDate": "March 2023",
-      "highlights": ["Assistance in projects", "User support"]
-    },
-    {
-      "company": "Lidl España",
-      "position": "Store Assistant",
-      "url": "https://www.linkedin.com/company/lidl-espana/",
-      "startDate": "June 2022",
-      "endDate": "August 2022",
-      "highlights": ["Customer service"]
     },
     {
       "company": "Menorcatel",

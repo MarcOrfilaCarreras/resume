@@ -4,7 +4,7 @@ import Header from "../sections/Header.astro";
 import About from "../sections/About.astro";
 import Work from "../sections/Work.astro";
 import Education from "../sections/Education.astro";
-import SkillsLanguages from "../sections/SkillsLanguages.astro";
+import Others from "../sections/Others.astro";
 import Projects from "../sections/Projects.astro";
 import Footer from "../sections/Footer.astro";
 import Language from "../components/ui/language-button.astro";
@@ -25,9 +25,9 @@ interface Props {
   titleProjects: string;
   projects: any;
 
-  titleSkillLanguages: string;
-  titleSkillLanguagesSkills: string;
-  titleSkillLanguagesLanguages: string;
+  titleOthers: string;
+  titleOthersSkills: string;
+  titleOthersLanguages: string;
   skills: any;
   languages: any;
 }
@@ -43,9 +43,9 @@ const {
   educations,
   titleProjects,
   projects,
-  titleSkillLanguages,
-  titleSkillLanguagesSkills,
-  titleSkillLanguagesLanguages,
+  titleOthers,
+  titleOthersSkills,
+  titleOthersLanguages,
   skills,
   languages,
 } = Astro.props;
@@ -80,10 +80,10 @@ const {
 
       <Projects title={titleProjects} projects={projects} />
 
-      <SkillsLanguages
-        title={titleSkillLanguages}
-        titleLanguages={titleSkillLanguagesLanguages}
-        titleSkills={titleSkillLanguagesSkills}
+      <Others
+        title={titleOthers}
+        titleLanguages={titleOthersLanguages}
+        titleSkills={titleOthersSkills}
         skills={skills}
         languages={languages}
       />
