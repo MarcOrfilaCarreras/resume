@@ -24,11 +24,23 @@
   },
   "works": [
     {
+      "company": "Ticnova",
+      "position": "Developer",
+      "url": "https://www.linkedin.com/company/ticnova",
+      "startDate": "March 2025",
+      "endDate": "Present",
+      "highlights": [
+        "Development and maintenance of internal applications, including the POS system used in stores",
+        "Diagnosis and resolution of incidents, providing technical support",
+        "Optimization of internal processes through integration with other systems"
+      ]
+    },    
+    {
       "company": "Intecat | Apple Premium Partner",
       "position": "Sales Specialist",
       "url": "https://www.linkedin.com/company/1556638/",
       "startDate": "June 2024",
-      "endDate": "Present",
+      "endDate": "February 2025",
       "highlights": [
         "Customer advisory",
         "Product demonstrations",
